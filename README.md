@@ -9,4 +9,14 @@ Installation instructions for wttr.in can be found here:
 Download the /bin/motd script and place it in your usr/bin folder. Download the weather.service and weather.timer unit files and place it in
 your /usr/etc/systemd/system folder.
 
-Run the command: systemctl daemon-reload
+Reload services by running the command:
+
+>systemctl daemon-reload
+
+Enable the weather.service unit file by running the command:
+
+>systemctl enable weather.service
+
+Enable the weather.service unit file by running the command:
+
+>systemctl enable weather.timer
